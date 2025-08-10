@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Displays the player's name -->
+    <TextView
+        android:id="@+id/tv_player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player: John"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Displays the current question number -->
+    <TextView
+        android:id="@+id/tv_question_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1 of 5"
+        android:layout_marginTop="8dp" />
+
+    <!-- Displays the question title -->
+    <TextView
+        android:id="@+id/tv_question_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is the capital of France?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <!-- Multiple choice answers as buttons -->
+    <Button
+        android:id="@+id/btn_choice_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choice 1"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btn_choice_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choice 2"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btn_choice_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choice 3"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btn_choice_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choice 4"
+        android:layout_marginTop="12dp" />
+
+    <!-- Track score and remaining chances -->
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tv_chances_remaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chances Remaining: 2"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

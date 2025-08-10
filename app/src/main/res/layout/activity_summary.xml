@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/summary_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Player name -->
+        <TextView
+            android:id="@+id/tv_summary_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player: John"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Final score -->
+        <TextView
+            android:id="@+id/tv_summary_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final Score: 35"
+            android:layout_marginTop="12dp" />
+
+        <!-- Remaining chances -->
+        <TextView
+            android:id="@+id/tv_summary_chances"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chances Left: 1"
+            android:layout_marginTop="8dp" />
+
+        <!-- Section heading -->
+        <TextView
+            android:id="@+id/tv_summary_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question Summary:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp" />
+
+        <!-- Container for dynamic question feedback -->
+        <LinearLayout
+            android:id="@+id/layout_question_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+
+        <!-- Play Again Button -->
+        <Button
+            android:id="@+id/btn_play_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Again"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>
